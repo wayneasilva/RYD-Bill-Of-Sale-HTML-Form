@@ -1,0 +1,94 @@
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
+p {
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgrey;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#fixed {
+    position: fixed;
+}
+
+#bill-of-sale {
+    max-width: 960px;
+    min-width: 960px;
+    background: white;
+    margin: auto;
+    padding: 80px;
+
+}
+
+#bill-of-sale > header {
+    text-align: center;
+    margin: auto;
+    line-height: 0.4;
+}
+
+/* #buyer-info {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: repeat(1fr, 10);
+    grid-template-areas:
+        "he he he he"
+        "bu bu ph ph"
+        "ad ad ad ad"
+        "ex ex ex ex"
+        "sd sd sd sd"
+        "su su su su";
+} */
+
+#buyer-info > header {
+    /* grid-area: he; */
+    text-align: center;
+}
+
+.line-item {
+    display: flex;
+}
+
+.line-item > p {
+    white-space: nowrap;
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.border-bot {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 15px;
+    border-bottom: 1px solid black;
+    border-width: thin;
+}
+
+#disclaimer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#waiver > header {
+    text-align: center;
+}
+
+#spacer {
+    height: 100px;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
